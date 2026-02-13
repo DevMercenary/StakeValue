@@ -1,0 +1,40 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# next.js
+.next/
+out/
+
+# build
+dist/
+build/
+
+# hardhat
+cache/
+artifacts/
+typechain-types/
+
+# env & secrets
+.env
+.env.local
+.env.*.local
+SECRETS.md
+
+# misc
+.DS_Store
+nul
+*.pem
+*.log
+npm-debug.log*
+medium-article.html
+
+# IDE
+.vscode/
+.idea/
+
+# turbopack
+.turbo/
+
+# claude
+.claude/

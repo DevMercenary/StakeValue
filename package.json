@@ -1,0 +1,23 @@
+{
+  "name": "stake-value",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bitcoin Staking Platform on MIDL",
+  "scripts": {
+    "dev": "pnpm --filter @stake-value/dapp dev",
+    "build": "pnpm --filter @stake-value/dapp build",
+    "compile": "pnpm --filter @stake-value/contracts compile",
+    "postinstall": "node -e \"const fs=require('fs');['node_modules/@midl/executor/node_modules/viem','node_modules/@midl/core/node_modules/viem','node_modules/@midl/hardhat-deploy/node_modules/viem'].forEach(p=>{if(fs.existsSync(p)){fs.rmSync(p,{recursive:true});console.log('Removed nested:',p)}})\""
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "viem": "npm:@midl/viem@^2.45.0"
+    }
+  },
+  "overrides": {
+    "viem": "npm:@midl/viem@^2.21.37"
+  }
+}
