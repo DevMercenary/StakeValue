@@ -1,4 +1,5 @@
 import { Toaster } from "@/components/ui/sonner";
+import { FloatingParticles } from "@/components/motion";
 import { Web3Provider } from "@/global";
 import { Header } from "@/widgets";
 import "@midl/satoshi-kit/styles.css";
@@ -33,8 +34,9 @@ export default function RootLayout({
 				<body
 					className={`${inter.variable} ${geistMono.variable} bg-background text-foreground antialiased`}
 				>
+					<FloatingParticles count={40} />
 					<Header />
-					<main className="relative z-10 mx-auto max-w-5xl px-4 py-8">
+					<main className="relative z-10 mx-auto max-w-6xl px-4 py-8">
 						{children}
 					</main>
 					<Toaster richColors theme="dark" />

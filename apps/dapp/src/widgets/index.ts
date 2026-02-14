@@ -4,3 +4,7 @@ export { Stake } from "./stake";
 export { Unstake } from "./unstake";
 export { Rewards } from "./rewards";
 export { RuneSelect } from "./rune-select";
+export { HowItWorks } from "./how-it-works";
+export { Features } from "./features";
+export { Stats } from "./stats";
+export { EarningsCalculator } from "./earnings-calculator";
